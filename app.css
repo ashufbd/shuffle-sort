@@ -1,0 +1,192 @@
+:root {
+    --white: #ffffff;
+    --blue: #2b8ead;
+    --light-blue:#6f98a8;
+    --black:#000000;
+    --sky-blue:#72c3dc;
+    --dark-blue:#2f454e;
+    --grey:#bfbfbf;
+    --light-grey:#efefef;
+    --dark--charcoal:#333333;;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: var(--light-grey);
+  }
+  
+  section,
+  footer,
+  header {
+    display: block;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    background-color: var(--white);
+  }
+  
+  header,
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.8rem;
+    font-size: 0.8rem;
+  }
+  
+  .cards--container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .section-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0.25rem;
+    border: 1px solid var(--white);
+    width: 100%;
+  }
+  
+  .btn {
+    display: block;
+    min-width: 5.5rem;
+    margin: 0.75rem;
+    padding: 0.75rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  
+  .btn-primary {
+    width: 10rem;
+    padding: 1rem 3rem;
+    margin: 1rem 2rem;
+  }
+  .btn:hover {
+    color: var(--white);
+    background-color: var(--blue);
+    border-color: var(--blue);
+  }
+  
+  .btn-primary,
+  .btn:focus {
+    color: var(--white);
+    background-color: var(--sky-blue);
+    border: var(--sky-blue);
+    border-radius: 0.8rem;
+    box-shadow: 0 0.18rem var(--blue);
+  }
+  
+  .section-cards div {
+    min-height: 12.3125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4em;
+  }
+  
+  .card:nth-of-type(1),
+  .card:nth-of-type(8) {
+    background: var(--light-blue);
+  }
+  
+  .card:nth-of-type(2),
+  .card:nth-of-type(4) {
+    background: var(--blue);
+  }
+  
+  .card:nth-of-type(3),
+  .card:nth-of-type(5),
+  .card:nth-of-type(9) {
+    background: var(--dark-blue);
+  }
+  
+  .card:nth-of-type(6),
+  .card:nth-of-type(7) {
+    background: var(--grey);
+  }
+  
+  @media screen and (max-width: 37.5em) {
+  html,
+  body {
+    background-color: var(--white);
+  }
+
+  .container {
+    border: 0.5rem solid var(--black);
+  }
+
+  header {
+    background-color: var(--dark--charcoal);
+    color: var(--white);
+  }
+
+  .cards--container {
+    flex-direction: column-reverse;
+  }
+
+  .action--buttons {
+    justify-content: center;
+    display: flex;
+  }
+
+  .action--buttons .btn {
+    display: inline;
+    padding: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  .section-cards {
+    grid-template-columns: auto;
+    width: auto;
+  }
+
+  .section-cards div {
+    min-height: 3.1rem;
+    color: var(--black);
+    font-size: 1em;
+    background-color: var(--light-grey);
+    margin: 0.18rem;
+  }
+
+  .card:nth-of-type(1),
+  .card:nth-of-type(8) {
+    border-left: 0.3rem solid var(--light-blue);
+    background-color: var(--light-grey);;
+  }
+
+  .card:nth-of-type(2),
+  .card:nth-of-type(4) {
+    border-left: 0.3rem solid var(--blue);
+    background-color: var(--light-grey);;
+  }
+
+  .card:nth-of-type(3),
+  .card:nth-of-type(5),
+  .card:nth-of-type(9) {
+    border-left: 0.3rem solid var(--dark-blue);
+    background-color: var(--light-grey);;
+  }
+
+  .card:nth-of-type(6),
+  .card:nth-of-type(7) {
+    border-left: 0.3rem solid var(--grey);
+    background-color: var(--light-grey);;
+  }
+
+  .btn-primary {
+    width: auto;
+    margin: 0.75rem 0.1rem;
+  }
+  }
